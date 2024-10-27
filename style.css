@@ -22,7 +22,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     width: 90%; /* Default to 90% for smaller screens */
-    max-width: 400px; /* Maximum width for larger screens */
+    max-width: 400px; /* Maximum width for smaller screens */
     animation: fadeIn 0.5s ease;
 }
 
@@ -104,6 +104,13 @@ input[type="password"]:focus {
 
     .container {
         padding: 15px; /* Reduce padding */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 70%; /* Increase width for laptops */
+        max-width: 600px; /* Maximum width for laptops */
     }
 }
 
